@@ -2,7 +2,28 @@
   "name": "dashboard-pronto",
   "version": "0.1.0",
   "private": true,
-  "scripts": {"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},
-  "dependencies": {"@supabase/ssr":"latest","@supabase/supabase-js":"latest","lucide-react":"latest","next":"latest","react":"latest","react-dom":"latest"},
-  "devDependencies": {"@types/node":"latest","@types/react":"latest","@types/react-dom":"latest","typescript":"latest"}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+  },
+  "dependencies": {
+    "@opennextjs/cloudflare": "latest",
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "wrangler": "latest"
+  }
 }
